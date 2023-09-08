@@ -1,10 +1,10 @@
 :root {
   /** colors */
   --color-name: custom;
-  --color-bg-shade: #252A33;
-  --color-bg-base: #2E3440;
-  --color-bg-surface: #373E4D;
-  --color-bg-highlight: #40495A;
+  --color-bg-shade: #2A2934;
+  --color-bg-base: #353341;
+  --color-bg-surface: #403D4E;
+  --color-bg-highlight: #4A475B;
   --color-fg-shade: #768CB2;
   --color-fg-base: #A6B4CD;
   --color-fg-surface: #D6DCE8;
@@ -24,14 +24,14 @@
   --color-palette-orange: #FFBB7C;
   
   /** general */
-  --font-family: Quicksand;
-  --font-size: 1;
+  --font-family: Fira Code;
+  --font-size: 0.9;
   --display-image: block;
 
   /** surface */
-  --surface-maxWidth: 1000px;
-  --surface-shadow: 12px 12px 0px rgb(39, 36, 56), 24px 24px 0px rgb(32.5, 30, 46.5), 36px 36px 0px rgb(26, 24, 37), 48px 48px 0px rgb(19.5, 18, 27.5), 60px 60px 0px rgb(13, 12, 18);
-  --surface-borderRadius: 0px;
+  --surface-maxWidth: 1010px;
+  --surface-shadow: 12px 12px 0px rgb(39, 36, 56), 24px 24px 0px rgb(30.333333333333336, 28, 43.333333333333336), 36px 36px 0px rgb(21.666666666666668, 20, 30.666666666666668), 48px 48px 0px rgb(13, 12, 18);
+  --surface-borderRadius: 27px;
 
   /** spacing */
   --space-smallest: 0.125rem;

@@ -5,16 +5,16 @@
   --color-bg-base: #111216;
   --color-bg-surface: #14161A;
   --color-bg-highlight: #18191F;
-  --color-fg-shade: #768CB2;
-  --color-fg-base: #A6B4CD;
-  --color-fg-surface: #D6DCE8;
+  --color-fg-shade: #DA8282;
+  --color-fg-base: #EEC5C5;
+  --color-fg-surface: #FFFFFF;
   --color-fg-highlight: #FFFFFF;
-  --color-primary-bg: #fdd590;
-  --color-primary-base: #F0EABB;
+  --color-primary-bg: #3F526F;
+  --color-primary-base: #97A9C4;
   --color-primary-fg: #FFFFFF;
-  --color-secondary-bg: #b09464;
-  --color-secondary-base: #FDD590;
-  --color-secondary-fg: #FFFFFF;
+  --color-secondary-bg: #434864;
+  --color-secondary-base: #959BB8;
+  --color-secondary-fg: #F9F9FB;
   --color-palette-red: #E06C75;
   --color-palette-green: #98C379;
   --color-palette-yellow: #E5C07B;
@@ -30,7 +30,7 @@
 
   /** surface */
   --surface-maxWidth: 1010px;
-  --surface-shadow: 12px 12px 0px rgb(253, 213, 144), 24px 24px 0px rgb(227.33333333333334, 191.33333333333334, 129.33333333333334), 36px 36px 0px rgb(201.66666666666666, 169.66666666666666, 114.66666666666667), 48px 48px 0px rgb(176, 148, 100);
+  --surface-shadow: 12px 12px 0px rgb(63, 82, 111), 24px 24px 0px rgb(64.33333333333333, 78.66666666666667, 107.33333333333333), 36px 36px 0px rgb(65.66666666666667, 75.33333333333333, 103.66666666666667), 48px 48px 0px rgb(67, 72, 100);
   --surface-borderRadius: 27px;
 
   /** spacing */

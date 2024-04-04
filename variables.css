@@ -14,7 +14,7 @@
   --color-primary-fg: #FFFFFF;
   --color-secondary-bg: #434864;
   --color-secondary-base: #959BB8;
-  --color-secondary-fg: #F9F9FB;
+  --color-secondary-fg: #eec5c5;
   --color-palette-red: #E06C75;
   --color-palette-green: #98C379;
   --color-palette-yellow: #E5C07B;
@@ -42,5 +42,5 @@
 
   /** others */
   --picture-size: 300px;
-  --group-count: 5;
+  --group-count: 6;
 }

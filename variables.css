@@ -12,9 +12,9 @@
   --color-primary-bg: #651E28;
   --color-primary-base: #C63F52;
   --color-primary-fg: #E4A4AD;
-  --color-secondary-bg: #0C0C13;
-  --color-secondary-base: #181825;
-  --color-secondary-fg: #242438;
+  --color-secondary-bg: #111414;
+  --color-secondary-base: #222828;
+  --color-secondary-fg: #C63F52;
   --color-palette-red: #E06C75;
   --color-palette-green: #98C379;
   --color-palette-yellow: #E5C07B;
@@ -24,13 +24,13 @@
   --color-palette-orange: #FFBB7C;
   
   /** general */
-  --font-family: Fira Code;
+  --font-family: Mulish;
   --font-size: 0.8;
   --display-image: block;
 
   /** surface */
   --surface-maxWidth: 1010px;
-  --surface-shadow: 12px 12px 0px rgb(101, 30, 40), 24px 24px 0px rgb(71.33333333333333, 24, 33), 36px 36px 0px rgb(41.666666666666664, 18, 26), 48px 48px 0px rgb(12, 12, 19);
+  --surface-shadow: 12px 12px 0px rgb(101, 30, 40), 24px 24px 0px rgb(73, 26.666666666666668, 33.333333333333336), 36px 36px 0px rgb(45, 23.333333333333332, 26.666666666666664), 48px 48px 0px rgb(17, 20, 20);
   --surface-borderRadius: 27px;
 
   /** spacing */

@@ -1,20 +1,20 @@
 :root {
   /** colors */
   --color-name: custom;
-  --color-bg-shade: #141414;
-  --color-bg-base: #191919;
-  --color-bg-surface: #1E1E1E;
-  --color-bg-highlight: #232323;
+  --color-bg-shade: #13131E;
+  --color-bg-base: #181825;
+  --color-bg-surface: #1D1D2C;
+  --color-bg-highlight: #222234;
   --color-fg-shade: #CCCCCC;
   --color-fg-base: #FFFFFF;
-  --color-fg-surface: #FFFFFF;
+  --color-fg-surface: #bac2de;
   --color-fg-highlight: #FFFFFF;
-  --color-primary-bg: #651E28;
-  --color-primary-base: #C63F52;
-  --color-primary-fg: #E4A4AD;
-  --color-secondary-bg: #111414;
-  --color-secondary-base: #222828;
-  --color-secondary-fg: #C63F52;
+  --color-primary-bg: #b4befe;
+  --color-primary-base: #B4BEFE;
+  --color-primary-fg: #FFFFFF;
+  --color-secondary-bg: #0F0F17;
+  --color-secondary-base: #1E1E2E;
+  --color-secondary-fg: #b4befe;
   --color-palette-red: #E06C75;
   --color-palette-green: #98C379;
   --color-palette-yellow: #E5C07B;
@@ -30,8 +30,8 @@
 
   /** surface */
   --surface-maxWidth: 1010px;
-  --surface-shadow: 12px 12px 0px rgb(101, 30, 40), 24px 24px 0px rgb(73, 26.666666666666668, 33.333333333333336), 36px 36px 0px rgb(45, 23.333333333333332, 26.666666666666664), 48px 48px 0px rgb(17, 20, 20);
-  --surface-borderRadius: 27px;
+  --surface-shadow: 9px 9px 0px rgb(180, 190, 254), 18px 18px 0px rgb(125, 131.66666666666666, 177), 27px 27px 0px rgb(70, 73.33333333333333, 100), 36px 36px 0px rgb(15, 15, 23);
+  --surface-borderRadius: 26px;
 
   /** spacing */
   --space-smallest: 0.125rem;

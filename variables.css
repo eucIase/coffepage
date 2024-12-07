@@ -1,20 +1,20 @@
 :root {
   /** colors */
   --color-name: custom;
-  --color-bg-shade: #191920;
-  --color-bg-base: #1F1F28;
-  --color-bg-surface: #252530;
-  --color-bg-highlight: #2B2B38;
-  --color-fg-shade: #C1B884;
-  --color-fg-base: #DCD7BA;
-  --color-fg-surface: #C8C093;
+  --color-bg-shade: #0C1014;
+  --color-bg-base: #0F1419;
+  --color-bg-surface: #12181E;
+  --color-bg-highlight: #151C23;
+  --color-fg-shade: #C8BD96;
+  --color-fg-base: #E6E1CF;
+  --color-fg-surface: #68d5ff;
   --color-fg-highlight: #FFFFFF;
-  --color-primary-bg: #E6C384;
-  --color-primary-base: #DCD7BA;
-  --color-primary-fg: #FFFFFF;
-  --color-secondary-bg: #938056;
-  --color-secondary-base: #C0A36E;
-  --color-secondary-fg: #C0A36E;
+  --color-primary-bg: #36a3d9;
+  --color-primary-base: #253340;
+  --color-primary-fg: #36a3d9;
+  --color-secondary-bg: #68d5ff;
+  --color-secondary-base: #253340;
+  --color-secondary-fg: #36a3d9;
   --color-palette-red: #E06C75;
   --color-palette-green: #98C379;
   --color-palette-yellow: #E5C07B;
@@ -24,13 +24,13 @@
   --color-palette-orange: #FFBB7C;
   
   /** general */
-  --font-family: Mullish;
+  --font-family: Roboto;
   --font-size: 0.8;
   --display-image: block;
 
   /** surface */
   --surface-maxWidth: 1010px;
-  --surface-shadow: 9px 9px 0px rgb(230, 195, 132), 18px 18px 0px rgb(202.33333333333334, 172.66666666666666, 116.66666666666667), 27px 27px 0px rgb(174.66666666666666, 150.33333333333334, 101.33333333333333), 36px 36px 0px rgb(147, 128, 86);
+  --surface-shadow: 9px 9px 0px rgb(54, 163, 217), 18px 18px 0px rgb(70.66666666666667, 179.66666666666666, 229.66666666666666), 27px 27px 0px rgb(87.33333333333334, 196.33333333333334, 242.33333333333334), 36px 36px 0px rgb(104, 213, 255);
   --surface-borderRadius: 26px;
 
   /** spacing */

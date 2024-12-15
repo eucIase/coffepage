@@ -2,15 +2,15 @@
   /** colors */
   --color-name: custom;
   --color-bg-shade: #13131E;
-  --color-bg-base: #181825;
-  --color-bg-surface: #1D1D2C;
+  --color-bg-base: #24273a;
+  --color-bg-surface: #181926;
   --color-bg-highlight: #222234;
   --color-fg-shade: #CCCCCC;
   --color-fg-base: #FFFFFF;
   --color-fg-surface: #bac2de;
   --color-fg-highlight: #FFFFFF;
   --color-primary-bg: #b4befe;
-  --color-primary-base: #B4BEFE;
+  --color-primary-base: #6e738d;
   --color-primary-fg: #FFFFFF;
   --color-secondary-bg: #0F0F17;
   --color-secondary-base: #1E1E2E;

@@ -1,20 +1,20 @@
 :root {
   /** colors */
   --color-name: custom;
-  --color-bg-shade: #0C1014;
-  --color-bg-base: #1f1f28;
-  --color-bg-surface: #2a2a37;
-  --color-bg-highlight: #151C23;
-  --color-fg-shade: #C8BD96;
-  --color-fg-base: #E6E1CF;
-  --color-fg-surface: #dcd7ba;
+  --color-bg-shade: #13131E;
+  --color-bg-base: #24273a;
+  --color-bg-surface: #181926;
+  --color-bg-highlight: #222234;
+  --color-fg-shade: #CCCCCC;
+  --color-fg-base: #FFFFFF;
+  --color-fg-surface: #bac2de;
   --color-fg-highlight: #FFFFFF;
-  --color-primary-bg: #dcd7ba;
-  --color-primary-base: #dcd7ba;
-  --color-primary-fg: #dcd7ba;
-  --color-secondary-bg: #6e6b5d;
-  --color-secondary-base: #253340;
-  --color-secondary-fg: #e6c384;
+  --color-primary-bg: #b4befe;
+  --color-primary-base: #6e738d;
+  --color-primary-fg: #FFFFFF;
+  --color-secondary-bg: #0F0F17;
+  --color-secondary-base: #1E1E2E;
+  --color-secondary-fg: #b4befe;
   --color-palette-red: #E06C75;
   --color-palette-green: #98C379;
   --color-palette-yellow: #E5C07B;
@@ -24,13 +24,13 @@
   --color-palette-orange: #FFBB7C;
   
   /** general */
-  --font-family: Roboto;
+  --font-family: JetBrains Mono;
   --font-size: 0.8;
   --display-image: block;
 
   /** surface */
   --surface-maxWidth: 1010px;
-  --surface-shadow: 9px 9px 0px rgb(220, 215, 186), 18px 18px 0px rgb(183.33333333333334, 179, 155), 27px 27px 0px rgb(146.66666666666669, 143, 124), 36px 36px 0px rgb(110, 107, 93);
+  --surface-shadow: 9px 9px 0px rgb(180, 190, 254), 18px 18px 0px rgb(125, 131.66666666666666, 177), 27px 27px 0px rgb(70, 73.33333333333333, 100), 36px 36px 0px rgb(15, 15, 23);
   --surface-borderRadius: 26px;
 
   /** spacing */

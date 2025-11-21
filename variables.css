@@ -2,19 +2,19 @@
   /** colors */
   --color-name: custom;
   --color-bg-shade: #13131E;
-  --color-bg-base: #070a11;
-  --color-bg-surface: #171516;
+  --color-bg-base: #595463;
+  --color-bg-surface: #211e1e;
   --color-bg-highlight: #222234;
   --color-fg-shade: #CCCCCC;
   --color-fg-base: #FFFFFF;
   --color-fg-surface: #9b9b9d;
   --color-fg-highlight: #FFFFFF;
-  --color-primary-bg: #909bb1;
-  --color-primary-base: #909bb1;
+  --color-primary-bg: #232631;
+  --color-primary-base: #232631;
   --color-primary-fg: #FFFFFF;
-  --color-secondary-bg: #0F0F17;
+  --color-secondary-bg: #59617d;
   --color-secondary-base: #1E1E2E;
-  --color-secondary-fg: #d386bf;
+  --color-secondary-fg: #a00d0d;
   --color-palette-red: #E06C75;
   --color-palette-green: #98C379;
   --color-palette-yellow: #E5C07B;
@@ -24,13 +24,13 @@
   --color-palette-orange: #FFBB7C;
   
   /** general */
-  --font-family: JetBrains Mono;
-  --font-size: 0.8;
+  --font-family: Shippori Antique;
+  --font-size: 0.9;
   --display-image: block;
 
   /** surface */
   --surface-maxWidth: 1010px;
-  --surface-shadow: 9px 9px 0px rgb(144, 155, 177), 18px 18px 0px rgb(101, 108.33333333333334, 125.66666666666666), 27px 27px 0px rgb(58, 61.66666666666667, 74.33333333333333), 36px 36px 0px rgb(15, 15, 23);
+  --surface-shadow: 9px 9px 0px rgb(35, 38, 49), 18px 18px 0px rgb(53, 57.66666666666667, 74.33333333333333), 27px 27px 0px rgb(71, 77.33333333333334, 99.66666666666666), 36px 36px 0px rgb(89, 97, 125);
   --surface-borderRadius: 26px;
 
   /** spacing */

@@ -2,11 +2,11 @@
   /** colors */
   --color-name: custom;
   --color-bg-shade: #15161E;
-  --color-bg-base: #1a1a1a;
-  --color-bg-surface: #16161f;
+  --color-bg-base: #c52233;
+  --color-bg-surface: #1e2023;
   --color-bg-highlight: #242635;
   --color-fg-shade: #CCCCCC;
-  --color-fg-base: #a4133c;
+  --color-fg-base: #c52233;
   --color-fg-surface: #FFFFFF;
   --color-fg-highlight: #FFFFFF;
   --color-primary-bg: #2c3f78;
@@ -14,7 +14,7 @@
   --color-primary-fg: #35394A;
   --color-secondary-bg: #74abaa;
   --color-secondary-base: #1b1d2b;
-  --color-secondary-fg: #d6bbad;
+  --color-secondary-fg: #c52233;
   --color-palette-red: #E06C75;
   --color-palette-green: #98C379;
   --color-palette-yellow: #E5C07B;

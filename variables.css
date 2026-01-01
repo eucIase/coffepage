@@ -2,19 +2,19 @@
   /** colors */
   --color-name: custom;
   --color-bg-shade: #15161E;
-  --color-bg-base: #c52233;
+  --color-bg-base: #0d6f73;
   --color-bg-surface: #1e2023;
   --color-bg-highlight: #242635;
   --color-fg-shade: #CCCCCC;
-  --color-fg-base: #c52233;
+  --color-fg-base: #e0ede9;
   --color-fg-surface: #FFFFFF;
   --color-fg-highlight: #FFFFFF;
   --color-primary-bg: #2c3f78;
-  --color-primary-base: #1b1d2b;
+  --color-primary-base: #e0ede9;
   --color-primary-fg: #35394A;
   --color-secondary-bg: #74abaa;
   --color-secondary-base: #1b1d2b;
-  --color-secondary-fg: #c52233;
+  --color-secondary-fg: #0d6f73;
   --color-palette-red: #E06C75;
   --color-palette-green: #98C379;
   --color-palette-yellow: #E5C07B;

@@ -1,20 +1,20 @@
 :root {
   /** colors */
   --color-name: custom;
-  --color-bg-shade: #15161E;
-  --color-bg-base: #282a31;
-  --color-bg-surface: #1e2023;
-  --color-bg-highlight: #242635;
+  --color-bg-shade: #13131E;
+  --color-bg-base: #000000;
+  --color-bg-surface: #171516;
+  --color-bg-highlight: #222234;
   --color-fg-shade: #CCCCCC;
-  --color-fg-base: #e0ede9;
-  --color-fg-surface: #FFFFFF;
+  --color-fg-base: #d7b958;
+  --color-fg-surface: #9b9b9d;
   --color-fg-highlight: #FFFFFF;
-  --color-primary-bg: #f3c856;
-  --color-primary-base: #f3c856;
-  --color-primary-fg: #35394A;
-  --color-secondary-bg: #a6893a;
-  --color-secondary-base: #1b1d2b;
-  --color-secondary-fg: #cca847;
+  --color-primary-bg: #f75553;
+  --color-primary-base: #ab3b3a;
+  --color-primary-fg: #d7b958;
+  --color-secondary-bg: #290e0e;
+  --color-secondary-base: #1E1E2E;
+  --color-secondary-fg: #d7b958;
   --color-palette-red: #E06C75;
   --color-palette-green: #98C379;
   --color-palette-yellow: #E5C07B;
@@ -24,13 +24,13 @@
   --color-palette-orange: #FFBB7C;
   
   /** general */
-  --font-family: Shippori Antique;
-  --font-size: 0.9;
+  --font-family: JetBrains Mono;
+  --font-size: 0.8;
   --display-image: block;
 
   /** surface */
   --surface-maxWidth: 1010px;
-  --surface-shadow: 9px 9px 0px rgb(243, 200, 86), 18px 18px 0px rgb(217.33333333333334, 179, 76.66666666666667), 27px 27px 0px rgb(191.66666666666666, 158, 67.33333333333333), 36px 36px 0px rgb(166, 137, 58);
+  --surface-shadow: 9px 9px 0px rgb(247, 85, 83), 18px 18px 0px rgb(178.33333333333331, 61.33333333333333, 60), 27px 27px 0px rgb(109.66666666666666, 37.666666666666664, 37), 36px 36px 0px rgb(41, 14, 14);
   --surface-borderRadius: 26px;
 
   /** spacing */

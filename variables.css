@@ -2,19 +2,19 @@
   /** colors */
   --color-name: custom;
   --color-bg-shade: #13131E;
-  --color-bg-base: #000000;
-  --color-bg-surface: #171516;
-  --color-bg-highlight: #b79bbd;
+  --color-bg-base: #1e1e2e;
+  --color-bg-surface: #11111b;
+  --color-bg-highlight: #78b5b0;
   --color-fg-shade: #CCCCCC;
-  --color-fg-base: #b79bbd;
+  --color-fg-base: #78b5b0;
   --color-fg-surface: #afabb6;
   --color-fg-highlight: #FFFFFF;
-  --color-primary-bg: #b79bbd;
-  --color-primary-base: #b79bbd;
+  --color-primary-bg: #78b5b0;
+  --color-primary-base: #78b5b0;
   --color-primary-fg: #afabb6;
-  --color-secondary-bg: #f6d1ff;
+  --color-secondary-bg: #456865;
   --color-secondary-base: #1E1E2E;
-  --color-secondary-fg: #b79bbd;
+  --color-secondary-fg: #78b5b0;
   --color-palette-red: #E06C75;
   --color-palette-green: #98C379;
   --color-palette-yellow: #E5C07B;
@@ -22,7 +22,7 @@
   --color-palette-purple: #C678DD;
   --color-palette-cyan: #56B6C2;
   --color-palette-orange: #FFBB7C;
-  
+
   /** general */
   --font-family: JetBrains Mono;
   --font-size: 0.8;
@@ -30,8 +30,8 @@
 
   /** surface */
   --surface-maxWidth: 1280px;
-  --surface-shadow: 6px 6px 0px rgb(183, 155, 189), 12px 12px 0px rgb(204, 173, 211), 18px 18px 0px rgb(225, 191, 233), 24px 24px 0px rgb(246, 209, 255);
-  --surface-borderRadius: 0px;
+  --surface-shadow: 6px 6px 0px rgb(120, 181, 176), 12px 12px 0px rgb(103, 155.33333333333334, 151), 18px 18px 0px rgb(86, 129.66666666666666, 126), 24px 24px 0px rgb(69, 104, 101);
+  --surface-borderRadius: 7px;
 
   /** spacing */
   --space-smallest: 0.125rem;
@@ -41,6 +41,6 @@
   --space-largest: 3rem;
 
   /** others */
-  --picture-size: 300px;
+  --picture-size: 400px;
   --group-count: 6;
 }

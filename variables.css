@@ -41,6 +41,6 @@
   --space-largest: 3rem;
 
   /** others */
-  --picture-size: 400px;
+  --picture-size: 300px 200px;
   --group-count: 6;
 }

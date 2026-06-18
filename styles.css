@@ -32,7 +32,7 @@ body {
   min-height: 100%;
   min-width: 600px;
   overflow: hidden;
-  
+
   font-family: var(--font-family), sans-serif;
   font-weight: 500;
   font-size: calc(var(--font-size) * var(--space-medium));
@@ -75,14 +75,14 @@ body {
   box-shadow: var(--surface-shadow);
 }
 
-.surface > img {
+.surface>img {
   height: var(--picture-size);
   width: var(--picture-size);
-  object-fit: cover;
+  object-fit: scale-down;
   display: var(--display-image);
 }
 
-.surface > main {
+.surface>main {
   padding: var(--space-large);
   flex: 1;
   max-width: calc(100% - var(--picture-size));
@@ -95,7 +95,7 @@ body {
  * Title
  **/
 
-.surface > main > h1 {
+.surface>main>h1 {
   color: var(--color-primary-fg);
   font-size: calc(var(--font-size) * var(--space-large));
   font-weight: 500;
@@ -115,7 +115,7 @@ body {
   align-items: center;
 }
 
-#searchbar > button {
+#searchbar>button {
   width: calc(var(--space-medium) * 2);
   height: calc(var(--space-medium) * 2);
   color: var(--color-primary-fg);
@@ -130,22 +130,22 @@ body {
   justify-content: center;
 }
 
-#searchbar > button > .feather-search {
+#searchbar>button>.feather-search {
   width: 1.2rem;
   height: 1.2rem;
 }
 
-#searchbar > button:hover {
+#searchbar>button:hover {
   color: var(--color-primary-base);
 }
 
-#searchbar > button:focus-visible {
+#searchbar>button:focus-visible {
   color: var(--color-primary-base);
   background: var(--color-bg-highlight);
   outline: var(--space-smallest) solid var(--color-fg-shade);
 }
 
-#searchbar > input {
+#searchbar>input {
   height: calc(var(--space-medium) * 2);
   flex: 1;
 
@@ -155,7 +155,7 @@ body {
   border-bottom: var(--space-smallest) solid var(--color-fg-base);
 }
 
-#searchbar > input:focus-visible {
+#searchbar>input:focus-visible {
   border-color: var(--color-primary-base);
 }
 
@@ -174,25 +174,25 @@ body {
   width: calc(100% / var(--group-count));
 }
 
-.bookmark-group > h2 {
+.bookmark-group>h2 {
   color: var(--color-secondary-fg);
   font-size: calc(var(--font-size) * var(--space-medium));
   font-weight: 500;
   margin: 0;
 }
 
-.bookmark-group > ul {
+.bookmark-group>ul {
   margin: 0;
   padding: 0;
   padding-right: var(--space-medium);
 }
 
-.bookmark-group > ul > li {
+.bookmark-group>ul>li {
   position: relative;
   list-style: none;
 }
 
-.bookmark-group > ul > li > a {
+.bookmark-group>ul>li>a {
   display: block;
   padding: 2px 0;
   text-overflow: ellipsis;
@@ -202,8 +202,8 @@ body {
   outline: none;
 }
 
-.bookmark-group > ul > li > a:hover::before,
-.bookmark-group > ul > li > a:focus-visible::before {
+.bookmark-group>ul>li>a:hover::before,
+.bookmark-group>ul>li>a:focus-visible::before {
   content: ">";
   position: absolute;
   left: -0.75rem;

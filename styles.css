@@ -78,7 +78,7 @@ body {
 .surface>img {
   height: var(--picture-size);
   width: var(--picture-size);
-  object-fit: scale-down;
+  object-fit: contain;
   display: var(--display-image);
 }
 

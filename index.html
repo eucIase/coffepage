@@ -9,6 +9,12 @@
       /* change this to recolor the clock text, e.g. #ff9e64 or white */
       :root {
         --clock-color: var(--color-primary-fg);
+        --card-scale: 1.25; /* 1 = normal size, 1.25 = 25% bigger */
+      }
+
+      /* scales the whole card: picture, text, search bar, bookmarks */
+      .surface {
+        zoom: var(--card-scale);
       }
 
       #ornament {
@@ -45,7 +51,7 @@
       #clock .time {
         font-size: min(2.4rem, 50cqh);
         line-height: 1.1;
-        color: #b4befe;
+        color: var(--clock-color);
         font-variant-numeric: tabular-nums;
         white-space: nowrap;
       }

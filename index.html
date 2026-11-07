@@ -5,10 +5,22 @@
     <link rel="icon" href="./favicon.ico" />
     <link href="./styles.css" rel="stylesheet">
     <title>New tab</title>
+    <style>
+      #ornament {
+        flex: 1;
+        min-height: 0;
+        margin-top: var(--space-large);
+        background-image: radial-gradient(var(--color-primary-base) 1.5px, transparent 1.5px);
+        background-size: 14px 14px;
+        opacity: 0.35;
+        -webkit-mask-image: linear-gradient(to bottom, #000, transparent);
+        mask-image: linear-gradient(to bottom, #000, transparent);
+      }
+    </style>
   </head>
   <body>
     <div class="surface">
-      <img src="https://i.ibb.co/b5QJMqrY/7bbcf7b26f93b493bb61dba4fb71840cbb4e0993491ae2c8d0998cf3ad38e773-catppuccin-mocha.jpg" alt="" />
+      <img src="https://i.ibb.co/Q70qg44d/HUnq82ja-AAAFrnp-catppuccin-macchiato-Avatar.png" alt="" />
       <main>
         <h1></h1>
         <div id="searchbar">
@@ -21,6 +33,7 @@
         <div id="bookmarks">
           <!-- Bookmarks will get inserted here! -->
         </div>
+        <div id="ornament"></div>
       </main>
     </div>
     <a id="yags-link" href="https://prettycoffee.github.io/yet-another-generic-startpage/">Created with YAGS</a>

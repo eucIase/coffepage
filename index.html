@@ -20,6 +20,36 @@
         -webkit-mask-image: linear-gradient(to bottom, #000, transparent);
         mask-image: linear-gradient(to bottom, #000, transparent);
       }
+      #clock {
+        margin-bottom: var(--space-large);
+      }
+      #clock .time {
+        font-size: 2.2rem;
+        line-height: 1.1;
+        color: var(--color-primary-fg);
+        font-variant-numeric: tabular-nums;
+      }
+      #clock .date {
+        margin-top: 0.2rem;
+        opacity: 0.7;
+      }
+
+      /* settings link: show a gear instead of the text */
+      a#yags-link {
+        font-size: 0;
+        line-height: 1;
+        opacity: 0.55;
+        transition: opacity 0.2s;
+      }
+      a#yags-link::before {
+        content: "\2699\FE0E";
+        font-size: 1.4rem;
+      }
+      a#yags-link:hover,
+      a#yags-link:focus-visible {
+        opacity: 1;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
@@ -27,6 +57,10 @@
       <img src="https://i.ibb.co/b5QJMqrY/7bbcf7b26f93b493bb61dba4fb71840cbb4e0993491ae2c8d0998cf3ad38e773-catppuccin-mocha.jpg" alt="" />
       <main>
         <h1></h1>
+        <div id="clock">
+          <div class="time"></div>
+          <div class="date"></div>
+        </div>
         <div id="searchbar">
           <button>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -38,9 +72,22 @@
           <!-- Bookmarks will get inserted here! -->
         </div>
         <div id="ornament"></div>
+        <script>
+          (function () {
+            var t = document.querySelector("#clock .time");
+            var d = document.querySelector("#clock .date");
+            function tick() {
+              var now = new Date();
+              t.textContent = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+              d.textContent = now.toLocaleDateString([], { weekday: "long", day: "numeric", month: "long" });
+            }
+            tick();
+            setInterval(tick, 1000);
+          })();
+        </script>
       </main>
     </div>
-    <a id="yags-link" href="https://prettycoffee.github.io/yet-another-generic-startpage/">Created with YAGS</a>
+    <a id="yags-link" title="Settings" href="https://prettycoffee.github.io/yet-another-generic-startpage/">Settings</a>
   </body>
   <script type="text/javascript" src="./scripts.js"></script>
 </html>

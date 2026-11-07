@@ -6,6 +6,11 @@
     <link href="./styles.css" rel="stylesheet">
     <title>New tab</title>
     <style>
+      /* change this to recolor the clock text, e.g. #ff9e64 or white */
+      :root {
+        --clock-color: var(--color-primary-fg);
+      }
+
       #ornament {
         flex: 1 1 0;
         min-height: 0;
@@ -40,13 +45,14 @@
       #clock .time {
         font-size: min(2.4rem, 50cqh);
         line-height: 1.1;
-        color: var(--color-primary-fg);
+        color: var(#b4befe);
         font-variant-numeric: tabular-nums;
         white-space: nowrap;
       }
       #clock .date {
         font-size: min(1rem, 20cqh);
         line-height: 1.2;
+        color: var(--clock-color);
         opacity: 0.7;
         white-space: nowrap;
       }

@@ -168,8 +168,8 @@ body {
 #bookmarks {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  margin-top: auto;
+  align-items: flex-start;
+  margin-top: var(--space-large);
 }
 
 .bookmark-group {

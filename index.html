@@ -7,7 +7,7 @@
     <title>New tab</title>
     <style>
       #ornament {
-        flex: 1;
+        flex: 1 1 0;
         min-height: 0;
         margin-top: var(--space-large);
         background-image: repeating-linear-gradient(
@@ -20,18 +20,35 @@
         -webkit-mask-image: linear-gradient(to bottom, #000, transparent);
         mask-image: linear-gradient(to bottom, #000, transparent);
       }
+      /* the content area is exactly as tall as the picture */
+      .surface > main {
+        height: var(--picture-size);
+        overflow: hidden;
+      }
+
+      /* the clock takes most of the free space (up to a max size) and scales its text to it */
       #clock {
-        margin-bottom: var(--space-large);
+        flex: 4 1 0;
+        min-height: 0;
+        max-height: 4.5rem;
+        container-type: size;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
       }
       #clock .time {
-        font-size: 2.2rem;
+        font-size: min(2.4rem, 50cqh);
         line-height: 1.1;
         color: var(--color-primary-fg);
         font-variant-numeric: tabular-nums;
+        white-space: nowrap;
       }
       #clock .date {
-        margin-top: 0.2rem;
+        font-size: min(1rem, 20cqh);
+        line-height: 1.2;
         opacity: 0.7;
+        white-space: nowrap;
       }
 
       /* settings link: show a gear instead of the text */

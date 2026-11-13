@@ -62,11 +62,36 @@ const createGroupTitle = title => {
   return h2
 }
 
+/**
+ * Bookmark icons (favicons)
+ * Set showIcons to false to turn them off.
+ * Note: the icon service you pick sees the domains of your bookmarks.
+ */
+const showIcons = true
+const iconUrl = url => {
+  try {
+    const host = new URL(url).hostname
+    return `https://icons.duckduckgo.com/ip3/${host}.ico`
+    // alternative: return `https://www.google.com/s2/favicons?domain=${host}&sz=32`
+  } catch {
+    return null
+  }
+}
+
 const createBookmark = ({ label, url }) => {
   const li = document.createElement("li")
   const a = document.createElement("a")
   a.href = url
-  a.innerHTML = label
+  const src = showIcons ? iconUrl(url) : null
+  if (src) {
+    const img = document.createElement("img")
+    img.className = "bookmark-icon"
+    img.alt = ""
+    img.onerror = () => img.remove() // no icon found: just show the text
+    img.src = src
+    a.append(img)
+  }
+  a.insertAdjacentHTML("beforeend", label)
   li.append(a)
   return li
 }

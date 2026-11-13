@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      // ===== PICTURE: paste a new image link between the quotes =====
+      var PICTURE_URL = "https://i.ibb.co/GvJwdmZ6/HWc-Gok-Cb-EAEs0m-N-catppuccin-macchiato-Custom.jpg";
+    </script>
+    <link rel="icon" href="./favicon.ico" />
+    <link href="./styles.css" rel="stylesheet">
+    <title>New tab</title>
+    <style>
+      /* settings */
+      :root {
+        --clock-color: #b7bdf8;
+        --card-scale: 1.10; /* 1 = normal size, 1.25 = 25% bigger */
+        --text-scale: 0.8;  /* font size inside the card: 1 = normal, 0.9 = 10% smaller */
+      }
+
+      /* scales the whole card: picture, text, search bar, bookmarks */
+      .surface {
+        zoom: var(--card-scale);
+      }
+
+      #ornament {
+        flex: 1 1 0;
+        min-height: 0;
+        margin-top: var(--space-large);
+        background-image: repeating-linear-gradient(
+          45deg,
+          var(--color-primary-base) 0 2px,
+          transparent 2px 12px
+        );
+        opacity: 0.25;
+        border-radius: 6px;
+        -webkit-mask-image: linear-gradient(to bottom, #000, transparent);
+        mask-image: linear-gradient(to bottom, #000, transparent);
+      }
+      /* the content area is exactly as tall as the picture */
+      .surface > main {
+        height: var(--picture-size);
+        overflow: hidden;
+        font-size: calc(1em * var(--text-scale));
+      }
+      .surface > main > h1 {
+        font-size: calc(var(--font-size) * var(--space-large) * var(--text-scale));
+      }
+      .bookmark-group > h2 {
+        font-size: calc(var(--font-size) * var(--space-medium) * var(--text-scale));
+      }
+
+      /* the clock takes most of the free space (up to a max size) and scales its text to it */
+      #clock {
+        flex: 4 1 0;
+        min-height: 0;
+        max-height: 4.5rem;
+        container-type: size;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+      }
+      #clock .time {
+        font-size: min(calc(2.4rem * var(--text-scale)), 50cqh);
+        line-height: 1.1;
+        color: var(--clock-color);
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+      }
+      #clock .date {
+        font-size: min(calc(1rem * var(--text-scale)), 20cqh);
+        line-height: 1.2;
+        color: var(--clock-color);
+        opacity: 0.7;
+        white-space: nowrap;
+      }
+
+      /* settings link: show a gear instead of the text */
+      a#yags-link {
+        font-size: 0;
+        line-height: 1;
+        opacity: 0.55;
+        transition: opacity 0.2s;
+      }
+      a#yags-link::before {
+        content: "\2699\FE0E";
+        font-size: 1.4rem;
+      }
+      a#yags-link:hover,
+      a#yags-link:focus-visible {
+        opacity: 1;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="surface">
+      <img id="picture" alt="" />
+      <main>
+        <h1></h1>
+        <div id="clock">
+          <div class="time"></div>
+          <div class="date"></div>
+        </div>
+        <div id="searchbar">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <span class="visually-hidden">Search</span>
+          </button>
+          <input type="text" placeholder="Search the web" autofocus />
+        </div>
+        <div id="bookmarks">
+          <!-- Bookmarks will get inserted here! -->
+        </div>
+        <div id="ornament"></div>
+        <script>
+          document.getElementById("picture").src = PICTURE_URL;
+
+          (function () {
+            var t = document.querySelector("#clock .time");
+            var d = document.querySelector("#clock .date");
+            function tick() {
+              var now = new Date();
+              t.textContent = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+              d.textContent = now.toLocaleDateString([], { weekday: "long", day: "numeric", month: "long" });
+            }
+            tick();
+            setInterval(tick, 1000);
+          })();
+        </script>
+      </main>
+    </div>
+    <a id="yags-link" title="Settings" href="https://prettycoffee.github.io/yet-another-generic-startpage/">Settings</a>
+  </body>
+  <script type="text/javascript" src="./scripts.js"></script>
+</html>

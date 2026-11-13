@@ -2,11 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <script>
+      // ===== PICTURE: paste a new image link between the quotes =====
+      var PICTURE_URL = "https://i.ibb.co/cSZb8Nyy/HWc-Gok-Cb-EAEs0m-N-catppuccin-macchiato.jpg";
+    </script>
     <link rel="icon" href="./favicon.ico" />
     <link href="./styles.css" rel="stylesheet">
     <title>New tab</title>
     <style>
-      /* change this to recolor the clock text, e.g. #ff9e64 or white */
+      /* settings */
       :root {
         --clock-color: #b7bdf8;
         --card-scale: 1.10; /* 1 = normal size, 1.25 = 25% bigger */
@@ -36,6 +40,13 @@
       .surface > main {
         height: var(--picture-size);
         overflow: hidden;
+        font-size: calc(1em * var(--text-scale));
+      }
+      .surface > main > h1 {
+        font-size: calc(var(--font-size) * var(--space-large) * var(--text-scale));
+      }
+      .bookmark-group > h2 {
+        font-size: calc(var(--font-size) * var(--space-medium) * var(--text-scale));
       }
 
       /* the clock takes most of the free space (up to a max size) and scales its text to it */
@@ -50,14 +61,14 @@
         overflow: hidden;
       }
       #clock .time {
-        font-size: min(2.4rem, 50cqh);
+        font-size: min(calc(2.4rem * var(--text-scale)), 50cqh);
         line-height: 1.1;
         color: var(--clock-color);
         font-variant-numeric: tabular-nums;
         white-space: nowrap;
       }
       #clock .date {
-        font-size: min(1rem, 20cqh);
+        font-size: min(calc(1rem * var(--text-scale)), 20cqh);
         line-height: 1.2;
         color: var(--clock-color);
         opacity: 0.7;
@@ -84,7 +95,7 @@
   </head>
   <body>
     <div class="surface">
-      <img src="https://i.ibb.co/b5QJMqrY/7bbcf7b26f93b493bb61dba4fb71840cbb4e0993491ae2c8d0998cf3ad38e773-catppuccin-mocha.jpg" alt="" />
+      <img id="picture" alt="" />
       <main>
         <h1></h1>
         <div id="clock">
@@ -103,6 +114,8 @@
         </div>
         <div id="ornament"></div>
         <script>
+          document.getElementById("picture").src = PICTURE_URL;
+
           (function () {
             var t = document.querySelector("#clock .time");
             var d = document.querySelector("#clock .date");
